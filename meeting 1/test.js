@@ -1,0 +1,1 @@
+document.write("mau belajar javascript");
