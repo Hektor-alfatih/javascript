@@ -1,6 +1,6 @@
 // praktek 1
 
-let hari = 'sabtu'
+let hari = 'Sabtu'
 
 switch (hari) {
     case 'senin':

@@ -1,9 +1,9 @@
 // praktek 1
 
-const umur = 6;
+const umur = 5;
 if (umur > 5) {
     console.log("bayar penuh");
-} else if (umur >= 2 && umur < 5) {
+} else if (umur >= 2 && umur <= 5) {
     console.log("bayar setengah harga");
 } else if (umur < 2) {
     console.log("tidak boleh masuk")
@@ -48,7 +48,7 @@ if (x > 0 && y > 0) {
 
 //praktek nomor 5 
 
-const pembelian = 190
+const pembelian = 110
 if (pembelian >=200 ) {
     console.log("Diskon 15% diterapkan");
    var discon = 0.15*pembelian

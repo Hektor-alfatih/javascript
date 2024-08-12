@@ -15,7 +15,7 @@ console.log (b);
 
 
 
-var alas = 5;
+var alas = 5; //tipe data integer
 var tinggi = 7;
 var rumus = 0.5;
 console.log(alas * tinggi * rumus);

@@ -1,6 +1,6 @@
 // Tugas 1
 
-var nilai = 70
+var nilai = 68
 var totalpertemuan = 30
 var kehadiran = 10
 var lulus = kehadiran / totalpertemuan * 100
