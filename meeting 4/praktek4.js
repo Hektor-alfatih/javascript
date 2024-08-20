@@ -1,11 +1,11 @@
 // Tugas 1
 
-var nilai = 68
-var totalpertemuan = 30
-var kehadiran = 10
+var nilai = 85
+var totalpertemuan = 10
+var kehadiran = 30
 var lulus = kehadiran / totalpertemuan * 100
 
-if (nilai > 85) {
+if (nilai > 135) {
     console.log("kategori A")
     if (lulus >= 75) {
         console.log("Anda lulus")
@@ -14,7 +14,7 @@ if (nilai > 85) {
     }
 
 
-}else if (nilai > 70) {
+}else if (nilai > 120) {
     console.log("Kategori B")
     if (lulus >= 75) {
         console.log("Anda lulus")
@@ -23,7 +23,7 @@ if (nilai > 85) {
     }
 
 
-}else if (nilai >= 50) {
+}else if (nilai >= 80) {
     console.log("kategori C")
     if (lulus >= 75) {
         console.log("Anda lulus")
@@ -45,7 +45,7 @@ if (nilai > 85) {
 
 // Tugas 2
 
-var pendaftaran = true
+var pendaftaran = false
 var pembayaran = true
 
 if (pendaftaran === true) {

@@ -1,6 +1,6 @@
 // praktek 1
 
-let hari = 'Sabtu'
+let hari = 'senin'
 
 switch (hari) {
     case 'senin':
@@ -34,15 +34,13 @@ switch (hari) {
 
 // praktek 2
 
-for (let i = 1; i <= 15; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
+for (let i = 1; i <= 27; i++) {
+    if (i % 3 === 0 && i % 4 === 0) {
         console.log("FizzBuzz",i);
     } else if (i % 3 === 0) {
         console.log("Fizz",i);
     } else if (i % 5 === 0) {
         console.log("Buzz",i);
-    } else if(i%11 ===0) {
-        console.log(i);
     }
 }
 

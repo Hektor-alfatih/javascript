@@ -1,6 +1,9 @@
 
 var a;
 console.log(a);
+var Person = "hektor"
+var fullname = "alfatih" + Person
+console.log(fullname);
 
 
 var nama = ("hektor ");
@@ -10,12 +13,12 @@ var hasil = (nama + umur + tempattinggal);
 console.log(hasil);
 
 
-var b = null;
+var b = false;
 console.log (b);
 
 
 
 var alas = 5; //tipe data integer
-var tinggi = 7;
+var tinggi = 9;
 var rumus = 0.5;
 console.log(alas * tinggi * rumus);
