@@ -36,7 +36,8 @@ class Book {
     }
 
     getDetails() {
-        return `Title: ${this.title}, Author: ${this.author}`;
+        var a = `Title: ${this.title}, Author: ${this.author}`
+        return a;
     }
 
     updateAuthor(newAuthor) {

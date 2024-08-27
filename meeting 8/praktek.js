@@ -50,6 +50,7 @@ class Orang {
   
   
   class Harimau extends Hewan {
+    // overrride
     makan() {
       return `${this.nama} makan daging`;
     }
