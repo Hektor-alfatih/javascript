@@ -141,3 +141,5 @@ function displayResult(finalPrice, paymentStatus) {
 
 console.log(displayResult(finalPrice, "paid")); 
 console.log(displayResult(finalPrice, "pending")); 
+
+displayResult()
