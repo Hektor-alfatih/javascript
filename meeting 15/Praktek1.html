@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Praktek 1</title>
+
+    <script>
+        function CekAngka() {
+            let angka = prompt("Masukkan angka : ");
+            angka = parseInt(angka);
+
+            if (angka > 10) {
+                alert("Angka lebih dari 10");
+            } else if (angka < 10) {
+                alert("Angka kurang dari 10");
+            } else {
+                alert("Angka sama dengan 10");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Soal Praktik 1: Alert Box dengan Operator Perbandingan</h1>
+    <button onclick="CekAngka()">Cek Angka</button>
+</body>
+</html>

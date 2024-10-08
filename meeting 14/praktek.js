@@ -158,7 +158,7 @@ async function chekpostavailabilty() {
   
   try {
 
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts/71');
 
     if (response.status !== 200) {
       console.log("Failed to fetch post");
