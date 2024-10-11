@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek 4</title>
+</head>
+<body>
+    <div id="colorBox">Ini Adalah Teks Yang akan di ubah Warnanya</div>
+
+    <script>
+        window.onload = function() {
+            let warna = prompt("Masukkan Warna : ")
+            let Box = document.getElementById("colorBox")
+            if (["red", "blue", "green"].includes(warna)) {
+                Box.style.color = warna
+            } else {
+                alert("Warna Tidak Valid")
+            }
+        }
+    </script>
+</body>
+</html>

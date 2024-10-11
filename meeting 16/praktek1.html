@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek 1</title>
+</head>
+<body>
+    <div id="div1">Ini Elemen div</div>
+
+    <p class="coba">Ini Elemen Paragraph</p>
+
+    <span class="coba">Ini Elemen Span</span>
+
+    <script>
+        const element = document.getElementById("div1")
+        element.style.color = "red"
+
+        const element2 = document.getElementsByClassName("coba")
+        element2[0].innerHTML = "Elemen Pertama yg di ubah"
+    </script>
+</body>
+</html>

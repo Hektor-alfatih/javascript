@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek 2</title>
+</head>
+<body>
+    <div class="konten">Text Awal</div>
+
+    <script>
+        const element = document.getElementsByClassName(".konten")
+
+        element.innerHTML = "<strong> Text Baru dengan innerHTML </strong>"
+        console.log("Menggunakan innerHTML :", element.innerHTML)
+
+        element.innerText = "Text Baru dengan innerText"
+        console.log("Menggunakan innerText :", element.innerText)
+
+        element.textContent = "Text Baru dengan textContent"
+        console.log("Menggunakan textContent :", element.textContent)
+        
+    </script>
+</body>
+</html>

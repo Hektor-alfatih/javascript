@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+
+<h1 id="latihan"><b> hello World</b></h1>
+
+<h1 class="latihan1"><b> hello World</b></h1>
+
+<h1>hello World</h1>
+
+
+
+<script>
+
+    // Mengakses DOM
+    const element = document.getElementById("latihan")
+    console.log(element);
+
+    const elements2 = document.getElementsByClassName("latihan1")
+    console.log(elements2);
+
+    const elements3 = document.getElementsByTagName("h1")
+    console.log(elements3);
+
+    // Mengubah DOM
+    const element4 = document.getElementsByClassName("latihan1").innerHTML = "Hai World"
+    console.log(element4);
+
+    const element5 = document.getElementsByTagName("h1")
+    console.log(element5.innerHTML = "Hai World");
+
+    // Menambah dan Menghapus DOM
+    const newElement = document.createElement("p");
+
+    newElement.innerText = "Hello World";
+    element.appendChild(newElement);
+
+    element.removeChild(newElement);
+    
+    
+</script>
+
+</body>
+</html>
