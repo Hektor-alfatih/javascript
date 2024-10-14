@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek 4</title>
+</head>
+<body>
+<ul class="ul">
+    <li id="1">Item 1</li>
+    <li id="2">Item 2</li>
+    <li id="3">Item 3</li>
+</ul>
+
+<script>
+    const ul = document.getElementsByClassName("ul")
+    const item4 = document.createElement("li")
+    item4.innerHTML = "item disisipkan "
+    ul[0].appendChild(item4)
+
+    const item1 = document.getElementById("1")
+    ul[0].insertBefore(item4, item1)
+</script>
+</body>
+</html>

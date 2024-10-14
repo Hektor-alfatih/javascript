@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    
+    <ul class="ul">
+        <li id="1">Item 1</li>
+        <li id="2">Item 2</li>
+        <li id="3">Item 3</li>
+    </ul>
+
+    <script>
+        // Mengubahubah Atribut dan Manipulasi Style Konten
+
+        const gambar = document.createElement("img");
+        gambar.setAttribute("src", "https://picsum.photos/200/300");
+        gambar.setAttribute("width", "200");
+        gambar.setAttribute("height", "300");
+        document.body.appendChild(gambar);
+
+        // Mengatur posisi Konten
+
+        const ul = document.getElementsByClassName("ul");
+        const item4 = document.createElement("li");
+        item4.innerHTML = "Item 4";
+        ul[0].appendChild(item4)
+
+        const item2 = document.getElementById("2");
+        ul[0].insertBefore(item4, item2);
+
+        
+
+
+    </script>
+</body>
+</html>
