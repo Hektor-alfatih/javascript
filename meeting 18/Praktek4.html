@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek 4</title>
+
+    <script>
+        function sambutan() {
+            const nama = confirm('apa anda ingin melanjutkan');
+            if (nama) {
+                alert('Selamat datang! di halaman');
+            } else {
+                alert('Anda Anda memilih untuk tidak melanjutkan.');
+            }
+        }
+
+        function namaUser() {
+            const username = prompt('Nama anda');
+            if (!username){
+                const cobalagi = confirm('Apakah anda ingin mencoba lagi');
+                if (cobalagi) {
+                    namaUser();
+                } else {
+                    alert('Terima kasih.');
+                }
+            }else if (username) {
+                alert('Selamat datang ' + username);
+            }
+        }
+    </script>
+</head>
+<body onload="sambutan()">
+    
+    <h1>Halaman Sambutan</h1>
+    <button onclick="namaUser()">Tombol Sambutan</button>
+</body>
+</html>
