@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek 1</title>
+</head>
+<body>
+    <button id="triggerButton">click</button>
+</body>
+<script>
+    const customclickevent = new Event("customclickevent");
+    function handlecustomclick() {
+        console.log("custom click Event triggered");
+    }
+
+    window.addEventListener("load", function() {
+        const button = document.getElementById("triggerButton");
+        document.addEventListener("customclickevent", handlecustomclick);
+        button.addEventListener("click", function() {
+            document.dispatchEvent(customclickevent);
+        })
+    })
+</script>
+</html>

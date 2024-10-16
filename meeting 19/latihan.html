@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <h1>Butuh Motivasi</h1>
+    <h3 id="motivasi">Tekan Tombol di bawah untuk mendapatkan motivasi</h3>
+    <button id="tombol">Klik Tombol</button>
+
+    <div id="parent">
+        <button id="child">Child</button>
+    </div>
+
+    <script>
+        const getmotivation = new Event("getmotivation");
+
+        function motivationhandler() {
+            document.getElementById("motivasi").innerHTML = "Kita punya harapan tapi dunia punya kenyataan";
+        }
+
+        window.addEventListener("load", function() {    
+            const button = document.getElementById("tombol");
+            document.addEventListener("getmotivation", motivationhandler);
+            button.addEventListener("click", function() {
+                document.dispatchEvent(getmotivation);
+            });
+        });
+
+        document.getElementById("child").addEventListener("click", function() {
+            console.log("child");
+        });
+        document.getElementById("parent").addEventListener("click", function() {
+            console.log("parent");
+        });
+
+
+        document.getElementById("child").addEventListener("click", function() {
+            console.log("child");
+        });
+        document.getElementById("parent").addEventListener("click", function() {
+            console.log("parent");
+        },true);
+    </script>
+</body>
+</html>

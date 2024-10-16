@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek 2</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="myButton">Click Me!</button>
+    </div>
+
+    <script>
+        const buttonClicked = new Event('buttonClicked');
+
+        function handleButtonClick() {
+            console.log("Button was clicked!");
+            document.dispatchEvent(buttonClicked);
+        }
+
+        function handleParentClick() {
+            console.log("Parent div received the event!");
+        }
+
+        const parentDiv = document.getElementById('parent');
+        parentDiv.addEventListener('buttonClicked', handleParentClick);
+
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', handleButtonClick);
+    </script>
+</body>
+</html>
