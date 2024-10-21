@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+</head>
+<body>
+    <div id="div1" style="width: 100px; height: 100px; background-color: blue;">Ondbclick</div>
+    <div id="div2" style="width: 100px; height: 100px; background-color: yellow;">Onmouseout</div>
+    <div id="div3" style="width: 100px; height: 100px; background-color: red;">Onmousemove</div>
+
+    <a href="https://www.example.com" id="mylink">Kunjungi Example.com</a>
+    <div class="message" id="message"></div>
+
+    <script>
+        const div1 = document.getElementById("div1");
+        const div2 = document.getElementById("div2");
+        const div3 = document.getElementById("div3");
+
+        div1.addEventListener("dblclick", function() {
+            div1.style.backgroundColor = "green";
+        });
+
+        div2.addEventListener("mouseout", function() {
+            div2.style.backgroundColor = "orange";
+        });
+
+        div3.addEventListener("mousemove", function() {
+            div3.style.backgroundColor = "purple";
+        });
+
+        const link = document.getElementById("mylink");
+        const pesan = document.getElementById("message");
+
+        link.addEventListener("click", function(link) {
+            link.preventDefault();
+
+            pesan.textContent = "Link diklik!";
+        });
+
+    </script>
+</body>
+</html>

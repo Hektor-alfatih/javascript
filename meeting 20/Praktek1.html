@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktek 1</title>
+</head>
+<body>
+    <form action="" id="myForm">
+
+        <input type="text" id="myname" placeholder="Enter your name">
+        <input type="email" name="email" id="myemail">
+
+        <button type="submit" id="mysubmit">Submit</button>
+
+    </form>
+
+    <script>
+        const form = document.getElementById("myForm");
+        const name = document.getElementById("myname");
+        const email = document.getElementById("myemail");
+        const submit = document.getElementById("mysubmit");
+
+        submit.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Name: " + name.value + "\nEmail: " + email.value);
+        });
+    </script>
+</body>
+</html>
