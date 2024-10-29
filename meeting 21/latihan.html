@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan</title>
+</head>
+<body>
+<input type="text" id="username" placeholder="Masukan username">
+<button id="savebutton">Simpan username</button>
+<button id="getbutton">Ambil username</button>
+<p id="output"></p>
+<button id="removebutton">Hapus username</button>
+
+<script>
+    document.getElementById("savebutton").addEventListener("click", function() {
+        const username = document.getElementById("username").value;
+        localStorage.setItem("username", username);
+        alert("Username berhasil disimpan." + username);
+    });
+
+    document.getElementById("getbutton").addEventListener("click", function() {
+        const username = localStorage.getItem("username");
+        document.getElementById("output").innerHTML = "Username: " 
+        + (username ? username : "tidak ada");
+        
+    });
+
+    document.getElementById("removebutton").addEventListener("click", function() {
+        localStorage.removeItem("username");
+        alert("Username di hapus");
+    });
+</script>
+</body>
+</html>
